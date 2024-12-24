@@ -1,4 +1,4 @@
-const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
+readline.question('Enter a string to validate: ', (input) => {
+  console.log(isNumber(input) ? 'Valid number format' : 'Invalid number format');
+  readline.close();
 });
